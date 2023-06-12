@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Aplicatie Intrebari</title>
+</head>
+<body>
+    <h1>Introdu o intrebare</h1>
+    <form method="POST">
+        <input type="text" name="question" required>
+        <input type="submit" value="Trimite">
+    </form>
+
+    {% if link %}
+        <h2>Răspuns:</h2>
+        <p>Link: <a href="{{ link }}">{{ link }}</a></p>
+        <p>Etichetă: {{ eticheta }}</p>
+    {% endif %}
+</body>
+</html>
