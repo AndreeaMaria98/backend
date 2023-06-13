@@ -70,13 +70,10 @@ def compute_similarity(ds_processed_question, user_question):
 
 def search_response(question, df):
     question = remove_punctuation(question)
-    print(question)
     question = replace_abbreviations(question)
-    print(question)
     question = replace_specializations_with_short_form(question)
-    print(question)
     question = nlp(question)
-    print(question)
+    
     # Calculate the similarity using the processed questions from the data set
     df['similarity'] = df['processed_question'].apply(lambda x: compute_similarity(x, question))
 
