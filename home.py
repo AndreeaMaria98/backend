@@ -4,39 +4,15 @@ import pandas as pd
 import spacy
 import re
 from sklearn.neighbors import NearestNeighbors
+from dictionaries import abbreviations, specializations
 
 app = Flask(__name__)
 nlp = spacy.load("ro_core_news_md")
 df = pd.read_csv('set_de_date.csv')
 
-abbreviations = {
-    "ang": "angajati",
-    "an": "anul",
-    "sem": "semestrul",
-    "spec": "specializare",
-    "pt": "pentru",
-    "dc": "de ce" 
-}
-
-inverse_abbreviations = {    
-    "ingineria sistemelor multimedia": "ISM",
-    "automatica si informatica aplicata": "AIA",
-    "calculatoare romana" : "CR",
-    "calculatoare engleza" : "CE",
-    "electronica aplicata" : "ELA",
-    "mecatronica" : "MCT",
-    "robotica" : "ROB",
-    "sisteme automate incorporate" : "SAI",
-    "tehnologii informatice in ingineria sistemelor" : "TIS",
-    "tehnologii informatice in ingineria sistemelor" : "TIIS",
-    "information systems for e-business" : "ISB",
-    "ingineria calculatoarelor si comunicatiilor" : "ICC",
-    "inginerie software" : "IS",
-    "sisteme de conducere in robotica" : "SCR"}
-
-# Function to replace full names in text
-def replace_full_names_with_abbreviations(text):
-    for full_name, abbreviation in inverse_abbreviations.items():
+# Function to replace specializations full names with their abbreviations
+def replace_specializations_with_short_form(text):
+    for full_name, abbreviation in specializations.items():
         # Search for full names regardless of the case (uppercase/lowercase) in which they are written
         pattern = re.compile(re.escape(full_name), re.IGNORECASE)
         # Replace all the matches with the corresponding abbreviation
@@ -60,11 +36,11 @@ def extract_keywords(question):
     return keywords
 
 # Function to remove the punctuation marks and auxiliary verbs
-def remove_punct_and_aux(text):
+def remove_punctuation(text):
     doc = nlp(text)
     tokens = []
     for token in doc:
-        if token.pos_ not in ["PUNCT", "AUX"]:
+        if token.pos_ not in ["PUNCT"]:
             tokens.append(token.text)
     return " ".join(tokens)
 
@@ -93,11 +69,14 @@ def compute_similarity(ds_processed_question, user_question):
     return similarity
 
 def search_response(question, df):
-    question = remove_punct_and_aux(question)
-    question = replace_full_names_with_abbreviations(question)
+    question = remove_punctuation(question)
+    print(question)
     question = replace_abbreviations(question)
+    print(question)
+    question = replace_specializations_with_short_form(question)
+    print(question)
     question = nlp(question)
-    
+    print(question)
     # Calculate the similarity using the processed questions from the data set
     df['similarity'] = df['processed_question'].apply(lambda x: compute_similarity(x, question))
 
