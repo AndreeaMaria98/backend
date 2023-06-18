@@ -1,4 +1,5 @@
-from flask import Flask, request, render_template
+from flask import Flask, request, render_template, jsonify
+from flask_cors import CORS, cross_origin
 import numpy as np
 import pandas as pd
 import spacy
@@ -87,16 +88,16 @@ def search_response(question, df):
         return None, None
 
 @app.route('/', methods=['GET', 'POST'])
+@cross_origin(origin='localhost', headers=['Content- Type'])
 def home():
     if request.method == 'POST':
-        intrebare = request.form.get('question')
-        # aici apelezi funcția ta pentru a căuta răspunsul
+        intrebare = request.get_json()['question']
         link, eticheta = search_response(intrebare, df)
-        # aici ar trebui să returnezi răspunsul într-un fel care să aibă sens pentru aplicația ta
-        # de exemplu, poate dorești să încorporezi răspunsul într-un alt șablon HTML și să îl returnezi
-        return "Link: {} Eticheta: {}".format(link, eticheta)
+        if link == None:
+            return jsonify({'response': "Îmi pare rău, dar nu am gasit informațiile pe care le-ai solicitat."})
+        link = "http://www.ace.ucv.ro" + link
+        return jsonify({'response': "Informațiile pe care le cauți pot fi găsite la următorul link: {}".format(link)})
     else:
-        # în cazul unei cereri GET, doar returnează șablonul
         return render_template('home.html')
 
 if __name__ == '__main__':
