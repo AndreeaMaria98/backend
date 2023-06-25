@@ -4,7 +4,6 @@ import numpy as np
 import pandas as pd
 import spacy
 import re
-from sklearn.neighbors import NearestNeighbors
 from dictionaries import abbreviations, specializations
 
 app = Flask(__name__)
@@ -91,8 +90,8 @@ def search_response(question, df):
 @cross_origin(origin='localhost', headers=['Content- Type'])
 def home():
     if request.method == 'POST':
-        intrebare = request.get_json()['question']
-        link, eticheta = search_response(intrebare, df)
+        question = request.get_json()['question']
+        link, etiquette = search_response(question, df)
         if link == None:
             return jsonify({'response': "Îmi pare rău, dar nu am gasit informațiile pe care le-ai solicitat."})
         link = "http://www.ace.ucv.ro" + link
