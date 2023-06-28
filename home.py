@@ -45,7 +45,7 @@ def remove_punctuation(text):
     return " ".join(tokens)
 
 # Process the questions from the dataset and store them in a new column
-df['processed_question'] = df['intrebare'].apply(lambda x: nlp(x))
+df['processed_question'] = df['intrebare'].apply(lambda x: nlp(x.lower()))
 
 def compute_similarity(ds_processed_question, user_question):
     similarity = ds_processed_question.similarity(user_question)
@@ -65,8 +65,18 @@ def compute_similarity(ds_processed_question, user_question):
     
     # Add the bonus to the similarity score
     similarity += order_bonus
-    
+
     return similarity
+
+# Function to calculate the number of unmatched words
+def compute_unmatched_words(user_question, ds_processed_question):
+    user_words = set([token.text.lower() for token in user_question])
+    ds_words = set([token.text.lower() for token in ds_processed_question])
+
+    # Find the words that are in user_words but not in ds_words
+    unmatched_words = ds_words.difference(user_words)
+
+    return len(unmatched_words)
 
 def search_response(question, df):
     question = remove_punctuation(question)
@@ -76,6 +86,9 @@ def search_response(question, df):
     
     # Calculate the similarity using the processed questions from the data set
     df['similarity'] = df['processed_question'].apply(lambda x: compute_similarity(x, question))
+    
+    # Subtract a penalty based on the number of unmatched words
+    df['similarity'] = df.apply(lambda row: row['similarity'] - 0.01 * compute_unmatched_words(question, row['processed_question']), axis=1)
 
     df = df.sort_values(by='similarity', ascending=False)
 
