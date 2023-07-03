@@ -7,7 +7,8 @@ abbreviations = {
     "dc": "de ce",
     "lb": "limba",
     "calc": "calculatoare",
-    "eng": "engleza"
+    "eng": "engleza",
+    "UCV": "universitatii din Craiova"
 }
 
 specializations = {    
@@ -24,7 +25,6 @@ specializations = {
     "calculatoare in engleza" : "CSE",
     "calculatoare in limba engleza" : "CSE",
     "CEN" : "CSE",
-    "CE" : "CSE",
     "electronica aplicata" : "ELA",
     "mecatronica" : "MCT",
     "robotica" : "ROB",

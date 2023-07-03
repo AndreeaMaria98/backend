@@ -2381,6 +2381,9 @@ Care este harta cladirii ACE?,/harti/index.php?tip=1&id=395,contact
 Unde gasesc salile de la ACE?,/harti/index.php?tip=1&id=395,contact
 Unde gasesc salile facultatii?,/harti/index.php?tip=1&id=395,contact
 Unde gasesc o sala din facultate?,/harti/index.php?tip=1&id=395,contact
+Unde pot gasi salile facultatii?,/harti/index.php?tip=1&id=395,contact
+Unde pot gasi salile facultatii ACE?,/harti/index.php?tip=1&id=395,contact
+Unde pot gasi salile ACE?,/harti/index.php?tip=1&id=395,contact
 Care este harta universitatii?,/harti/index.php?tip=1&id=394,contact
 Care este harta universitatii din Craiova?,/harti/index.php?tip=1&id=394,contact
 Care este harta cladirii centrale?,/harti/index.php?tip=1&id=394,contact
@@ -2388,6 +2391,9 @@ Unde gasesc salile universitatii?,/harti/index.php?tip=1&id=394,contact
 Unde gasesc salile universitatii din Craiova?,/harti/index.php?tip=1&id=394,contact
 Unde gasesc o sala din universitate?,/harti/index.php?tip=1&id=394,contact
 Unde gasesc o sala din cladirea centrala?,/harti/index.php?tip=1&id=394,contact
+Unde pot gasi salile universitatii?,/harti/index.php?tip=1&id=394,contact
+Unde pot gasi salile universitatii din Craiova?,/harti/index.php?tip=1&id=394,contact
+Unde pot gasi salile cladirii centrale?,/harti/index.php?tip=1&id=394,contact
 Care este harta?,/harti/,contact
 Harta,/harti/,contact
 Harti,/harti/,contact
@@ -2461,10 +2467,20 @@ Transport,/despre/vizitatori/transport.php,despre
 Cu ce pot ajunge la facultate?,/despre/vizitatori/transport.php,despre
 Care este planul de invatamant?,/invatamant/didactica/planuri.php,invatamant
 Plan de invatamant,/invatamant/didactica/planuri.php,invatamant
+Planuri de invatamant,/invatamant/didactica/planuri.php,invatamant
+Planurile de invatamant,/invatamant/didactica/planuri.php,invatamant
 Care este planul de invatamant la licenta?,/invatamant/didactica/planuri.php#licenta,invatamant
 Plan de invatamant licenta,/invatamant/didactica/planuri.php#licenta,invatamant
-Care este planul de invatamant la master?,/invatamant/didactica/planuri.php#licenta,invatamant
+Planuri de invatamant la licenta,/invatamant/didactica/planuri.php#licenta,invatamant
+Planurile de invatamant la licenta,/invatamant/didactica/planuri.php#licenta,invatamant
+Care sunt planurile de invatamant la licenta?,/invatamant/didactica/planuri.php#licenta,invatamant
+Care sunt planurile de invatamant pentru licenta?,/invatamant/didactica/planuri.php#licenta,invatamant
+Care este planul de invatamant la master?,/invatamant/didactica/planuri.php#master,invatamant
 Plan de invatamant master,/invatamant/didactica/planuri.php#master,invatamant
+Planuri de invatamant la master,/invatamant/didactica/planuri.php#master,invatamant
+Planurile de invatamant la master,/invatamant/didactica/planuri.php#master,invatamant
+Care sunt planurile de invatamant la master?,/invatamant/didactica/planuri.php#master,invatamant
+Care sunt planurile de invatamant pentru master?,/invatamant/didactica/planuri.php#master,invatamant
 Programarea examenelor,/invatamant/utile/examene.php,examene
 Programare examene ani anteriori,/invatamant/utile/examene.php,examene
 Care este programarea examenelor?,/invatamant/utile/examene.php,examene

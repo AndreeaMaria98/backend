@@ -71,12 +71,13 @@ def compute_unmatched_words(user_question, ds_processed_question):
     return len(unmatched_words)
 
 def search_response(question, df):
-    question = question.lower()
     question = remove_punctuation(question)
     question = replace_abbreviations(question)
     question = replace_specializations_with_short_form(question)
+    question = question.lower()
     question = nlp(question)
-    
+    print(question)
+
     # Calculate the similarity using the processed questions from the data set
     df['similarity'] = df['processed_question'].apply(lambda x: compute_similarity(x, question))
     
