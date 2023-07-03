@@ -2378,11 +2378,23 @@ Contact,/site/contact.php,contact
 Care este harta facultatii?,/harti/index.php?tip=1&id=395,contact
 Care este harta facultatii ACE?,/harti/index.php?tip=1&id=395,contact
 Care este harta cladirii ACE?,/harti/index.php?tip=1&id=395,contact
+Unde gasesc salile de la ACE?,/harti/index.php?tip=1&id=395,contact
+Unde gasesc salile facultatii?,/harti/index.php?tip=1&id=395,contact
+Unde gasesc o sala din facultate?,/harti/index.php?tip=1&id=395,contact
 Care este harta universitatii?,/harti/index.php?tip=1&id=394,contact
 Care este harta universitatii din Craiova?,/harti/index.php?tip=1&id=394,contact
 Care este harta cladirii centrale?,/harti/index.php?tip=1&id=394,contact
+Unde gasesc salile universitatii?,/harti/index.php?tip=1&id=394,contact
+Unde gasesc salile universitatii din Craiova?,/harti/index.php?tip=1&id=394,contact
+Unde gasesc o sala din universitate?,/harti/index.php?tip=1&id=394,contact
+Unde gasesc o sala din cladirea centrala?,/harti/index.php?tip=1&id=394,contact
 Care este harta?,/harti/,contact
 Harta,/harti/,contact
+Harti,/harti/,contact
+Unde gasesc salile?,/harti/,contact
+Unde este sala?,/harti/,contact
+Unde gasesc o sala?,/harti/,contact
+Unde gasesc sala?,/harti/,contact
 Cum ma inscriu la facultate?,/admitere/,admitere
 Cum ma inscriu la ACE?,/admitere/,admitere
 Informatii admitere,/admitere/,admitere
@@ -2390,13 +2402,17 @@ Admitere,/admitere/,admitere
 Cum ma inscriu la licenta?,/admitere/licenta/,admitere
 Admitere licenta,/admitere/licenta/,admitere
 Informatii admitere licenta,/admitere/licenta/,admitere
+Cum se face admiterea la licenta?,/admitere/licenta/,admitere
 Cum ma inscriu la master?,/admitere/master/,admitere
 Admitere master,/admitere/master/,admitere
 Informatii admitere master,/admitere/master/,admitere
+Cum se face admiterea la master?,/admitere/master/,admitere
 Cum ma inscriu la doctorat?,/admitere/scoala_doctorala/,admitere
 Cum ma inscriu la scoala doctorala?,/admitere/scoala_doctorala/,admitere
 Admitere doctorat,/admitere/scoala_doctorala/,admitere
 Admitere scoala doctorala,/admitere/scoala_doctorala/,admitere
+Cum se face admiterea la doctorat?,/admitere/scoala_doctorala/,admitere
+Cum se face admiterea la scoala doctorala?,/admitere/scoala_doctorala/,admitere
 Calendar admitere licenta,/admitere/licenta/calendar.php,admitere
 Care este calendarul de admitere la licenta,/admitere/licenta/calendar.php,admitere
 Care este calendarul de admitere la facultate,/admitere/licenta/calendar.php,admitere
@@ -2546,7 +2562,11 @@ Avizier secretariat,/invatamant/utile/avizier_secretariat.php,secreatariat
 Care sunt informatiile de la secreatariat?,/invatamant/utile/avizier_secretariat.php,secreatariat
 Care sunt informatiile transmise de secreatariat?,/invatamant/utile/avizier_secretariat.php,secreatariat
 Care este avizierul secretariatului?,/invatamant/utile/avizier_secretariat.php,secreatariat
+Care sunt comisiile pentru examenele de finalizare ale studiilor?,/pdf/stiri/2023/Comisii_finalizare_studii_2023.pdf,finalizare studii
+Care sunt comisiile pentru disertatie?,/pdf/stiri/2023/Comisii_finalizare_studii_2023.pdf,finalizare studii
+Care sunt comisiile pentru licenta?,/pdf/stiri/2023/Comisii_finalizare_studii_2023.pdf,finalizare studii
 Care este comisia pentru examenul de licenta?,/pdf/stiri/2023/Comisii_finalizare_studii_2023.pdf,finalizare studii
+Care este comisia pentru examenul de diploma?,/pdf/stiri/2023/Comisii_finalizare_studii_2023.pdf,finalizare studii
 Care este comisia pentru examenul de master?,/pdf/stiri/2023/Comisii_finalizare_studii_2023.pdf,finalizare studii
 Care este comisia pentru examenul de finalizare a studiilor?,/pdf/stiri/2023/Comisii_finalizare_studii_2023.pdf,finalizare studii
 Comisii finalizare studii,/pdf/stiri/2023/Comisii_finalizare_studii_2023.pdf,finalizare studii
@@ -2613,6 +2633,21 @@ Tematica probei examen finalizare studii pentru ROB,/pdf/stiri/2023/2023_Tematic
 Tematica evaluare cunostintelor fundamentale pentru ROB,/pdf/stiri/2023/2023_Tematica_Proba_evaluarea_cunostintelor_fundamentale_specialitate_ROB.pdf,finalizare studii
 Care este tematica probei 1 la examenul de licenta pentru ROB?,/pdf/stiri/2023/2023_Tematica_Proba_evaluarea_cunostintelor_fundamentale_specialitate_ROB.pdf,finalizare studii
 Care este tematica probei 1 la examenul de finalizare de studii pentru ROB?,/pdf/stiri/2023/2023_Tematica_Proba_evaluarea_cunostintelor_fundamentale_specialitate_ROB.pdf,finalizare studii
+Care este planificare candidatilor pentru licenta?,/media/det.php?id=1794,finalizare studii
+Care este planificare candidatilor pentru disertatie?,/media/det.php?id=1794,finalizare studii
+Care este planificare candidatilor pentru diploma de licenta?,/media/det.php?id=1794,finalizare studii
+Care este planificare candidatilor pentru diploma de master?,/media/det.php?id=1794,finalizare studii
+Care este planificare candidatilor pentru finalizarea studiilor?,/media/det.php?id=1794,finalizare studii
+Care este planificarea studentilor pentru licenta?,/media/det.php?id=1794,finalizare studii
+Care este planificarea studentilor pentru disertatie?,/media/det.php?id=1794,finalizare studii
+Care este planificarea studentilor pentru diploma de licenta?,/media/det.php?id=1794,finalizare studii
+Care este planificarea studentilor pentru diploma de master?,/media/det.php?id=1794,finalizare studii
+Care este planificarea studentilor pentru finalizarea studiilor?,/media/det.php?id=1794,finalizare studii
+Cand trebuie sa ma prezint pentru examenul de disertatie?,/media/det.php?id=1794,finalizare studii
+Cand trebuie sa ma prezint pentru examenul de licenta?,/media/det.php?id=1794,finalizare studii
+Cand trebuie sa ma prezint pentru examenul de diploma?,/media/det.php?id=1794,finalizare studii
+Cand trebuie sa ma prezint pentru examenul de master?,/media/det.php?id=1794,finalizare studii
+Planificare finalizare studii,/media/det.php?id=1794,finalizare studii
 ERASMUS,/invatamant/relatii_internationale/,mobilitati
 Programul ERASMUS,/invatamant/relatii_internationale/,mobilitati
 Informatii ERASMUS,/invatamant/relatii_internationale/,mobilitati
@@ -2867,17 +2902,17 @@ Angajati ACE,/comunitate/angajati/index_a_z.php,membri
 Unde gasesc angajatii ACE,/comunitate/angajati/index_a_z.php,membri
 Care sunt angajatii ACE,/comunitate/angajati/index_a_z.php,membri
 Care sunt angajatii facultatii,/comunitate/angajati/index_a_z.php,membri
-Membri,/comunitate/angajati/index_a_z.php,membri
-Membri ACE,/comunitate/angajati/index_a_z.php,membri
+Membrii,/comunitate/angajati/index_a_z.php,membri
+Membrii ACE,/comunitate/angajati/index_a_z.php,membri
 Unde gasesc membrii ACE,/comunitate/angajati/index_a_z.php,membri
 Care sunt membrii ACE,/comunitate/angajati/index_a_z.php,membri
 Care sunt membrii facultatii,/comunitate/angajati/index_a_z.php,membri
-Membri DCTI,/comunitate/angajati/membri_dcti.php,membri
-Membri Departamentul de Calculatoare si Tehnologia informatiei,/comunitate/angajati/membri_dcti.php,membri
+Membrii DCTI,/comunitate/angajati/membri_dcti.php,membri
+Membrii Departamentul de Calculatoare si Tehnologia informatiei,/comunitate/angajati/membri_dcti.php,membri
 Care sunt membrii DCTI?,/comunitate/angajati/membri_dcti.php,membri
 Care sunt membrii Departamentului de Calculatoare si Tehnologia informatiei?,/comunitate/angajati/membri_dcti.php,membri
-Membri DAEM,/comunitate/angajati/membri_daem.php,membri
-Membri Departamentul de Automatica Electronica si Mecatronica,/comunitate/angajati/membri_daem.php,membri
+Membrii DAEM,/comunitate/angajati/membri_daem.php,membri
+Membrii Departamentul de Automatica Electronica si Mecatronica,/comunitate/angajati/membri_daem.php,membri
 Care sunt membrii DAEM?,/comunitate/angajati/membri_daem.php,membri
 Care sunt membrii Departamentului de Automatica Electronica si Mecatronica?,/comunitate/angajati/membri_daem.php,membri
 Angajati DCTI,/comunitate/angajati/membri_dcti.php,membri

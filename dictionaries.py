@@ -5,7 +5,9 @@ abbreviations = {
     "spec": "specializare",
     "pt": "pentru",
     "dc": "de ce",
-    "lb": "limba"
+    "lb": "limba",
+    "calc": "calculatoare",
+    "eng": "engleza"
 }
 
 specializations = {    
@@ -13,12 +15,16 @@ specializations = {
     "inginerie sisteme multimedia": "ISM",
     "automatica si informatica aplicata": "AIA",
     "automatica informatica aplicata": "AIA",
-    "calculatoare romana" : "CR",
-    "calculatoare in romana" : "CR",
-    "calculatoare in limba romana" : "CR",
-    "calculatoare engleza" : "CE",
-    "calculatoare in engleza" : "CE",
-    "calculatoare in limba engleza" : "CE",
+    "calculatoare romana" : "CSR",
+    "calculatoare in romana" : "CSR",
+    "calculatoare in limba romana" : "CSR",
+    "CROM" : "CSR",
+    "CR" : "CSR",
+    "calculatoare engleza" : "CSE",
+    "calculatoare in engleza" : "CSE",
+    "calculatoare in limba engleza" : "CSE",
+    "CEN" : "CSE",
+    "CE" : "CSE",
     "electronica aplicata" : "ELA",
     "mecatronica" : "MCT",
     "robotica" : "ROB",

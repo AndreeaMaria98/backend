@@ -14,7 +14,7 @@ df = pd.read_csv('set_de_date.csv')
 def replace_specializations_with_short_form(text):
     for full_name, abbreviation in specializations.items():
         # Search for full names regardless of the case (uppercase/lowercase) in which they are written
-        pattern = re.compile(re.escape(full_name), re.IGNORECASE)
+        pattern = re.compile(r'\b' + re.escape(full_name) + r'\b', re.IGNORECASE)
         # Replace all the matches with the corresponding abbreviation
         text = pattern.sub(abbreviation, text)
     return text
@@ -26,14 +26,6 @@ def replace_abbreviations(text):
         if words[i].lower() in abbreviations:
             words[i] = abbreviations[words[i].lower()]
     return " ".join(words)
-
-# Function to extract keywords from the question
-def extract_keywords(question):
-    doc = nlp(question)
-    keywords = []
-    for token in doc:
-        keywords.append(token.text.lower())
-    return keywords
 
 # Function to remove the punctuation marks and auxiliary verbs
 def remove_punctuation(text):
@@ -79,6 +71,7 @@ def compute_unmatched_words(user_question, ds_processed_question):
     return len(unmatched_words)
 
 def search_response(question, df):
+    question = question.lower()
     question = remove_punctuation(question)
     question = replace_abbreviations(question)
     question = replace_specializations_with_short_form(question)
